@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wow" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:layout_marginTop="80dp"
+            android:padding="20dp">
+
+
+
+            <Button
+                android:id="@+id/button_gor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_stroke_black95_press_white2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/black95"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="90dp">
+            <TextView
+                android:id="@+id/text_as"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:text="Сильный характер выковывается, только когда преодолеваешь сопротивление – и в спортивном зале, и в жизни. «Арнольд Шварценеггер»💪"
+                android:textColor="@color/black95"
+                android:textSize="30sp"
+                android:gravity="center">
+
+            </TextView>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_stroke_black95_press_white2"
+                android:layout_weight="1"
+                android:text="@string/level3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black95"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

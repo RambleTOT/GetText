@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wow" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:padding="20dp">
+
+
+
+            <Button
+                android:id="@+id/button_ba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_stroke_black95_press_white2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/black95"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/level6"
+                android:textColor="@color/black95"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp">
+            <TextView
+                android:id="@+id/text_f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/level66"
+                android:textColor="@color/black95"
+                android:textSize="45sp"
+                android:gravity="center">
+
+            </TextView>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

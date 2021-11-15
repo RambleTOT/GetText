@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wow" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:layout_marginTop="90dp"
+            android:padding="20dp">
+
+
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_stroke_black95_press_white2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="@color/black95"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level55"
+            android:textColor="@color/black95"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="80dp">
+            <TextView
+                android:id="@+id/text_f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="53sp"
+                android:textStyle="bold"
+                android:gravity="center">
+
+            </TextView>
+
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_stroke_black95_press_white2"
+                android:layout_weight="1"
+                android:text="@string/ss"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/black95"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
